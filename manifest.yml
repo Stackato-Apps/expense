@@ -1,0 +1,10 @@
+applications:
+- name: expense
+  mem: 256M
+  services:
+    ${name}-db:
+      type: mysql
+  stackato:
+    hooks:
+      post-staging:
+      - bundle exec rake db:create db:migrate

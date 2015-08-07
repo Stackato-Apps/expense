@@ -2,6 +2,12 @@
 
 Simple, personal expense tracking.
 
+## Deploying on Stackato
+
+```
+stackato push -n
+```
+
 ## Setup
 
 1. Clone the repository.
